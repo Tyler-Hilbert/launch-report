@@ -1,85 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Website Title  -->
     <title>Launch Report -- Print My Drone</title>
-
-    <!-- CSS  -->
     <link href="output.css" rel="stylesheet">
     <link href="rainbow.css" rel="stylesheet">
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6MB99NM27"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-R6MB99NM27');
     </script>
-
-    <!--  meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-
-<body class="rainbow-swirl">
-    <div class="bg-red-50 bg-opacity-90 rounded-3xl container mx-auto px-4 my-4 py-4">
-        <!-- Header -->
-        <h1 class="text-4xl font-bold text-center text-red-700 my-5">Launch Report</h1>
-
-        <!-- Collection Info -->
-        <div class="bg-red-100 border border-red-500 text-red-700 p-4 rounded-lg">
+<body class="bg-gradient-to-r from-purple-500 to-pink-500 min-h-screen flex flex-col">
+    <div class="max-w-4xl mx-auto p-5 bg-white rounded-3xl shadow-lg my-8">
+        <h1 class="text-4xl font-bold text-center text-gray-800 py-4">Launch Report</h1>
+        <div class="bg-gray-100 border border-gray-400 text-gray-800 p-4 rounded-lg mb-6">
             <p class="font-bold">Project</p>
-            <a href="https://printmydrone.com" class="flex items-center space-x-2 hover:bg-red-200 p-2 rounded">
-                <img src="PrintMyDrone.png" class="w-6 h-6">
+            <a href="https://printmydrone.com" class="flex items-center space-x-2 hover:bg-gray-200 p-2 rounded transition-colors duration-150 ease-in-out">
+                <img src="PrintMyDrone.png" alt="Print My Drone" class="w-6 h-6">
                 <p>Print My Drone</p>
             </a>
-            <p class="font-bold mt-2">Description</p>
+            <p class="font-bold mt-4">Description</p>
             <p>Catalog of 3D printable drones posted on Show HackerNews and various forums</p>
-            <p class="font-bold mt-2">Launch Date</p>
+            <p class="font-bold mt-4">Success Metrics</p>
+            <ul class="list-disc pl-5">
+                <li>Google Analytics: 422 users</li>
+                <li>HackerNews: Place #4 under Show HN</li>
+                <li>HackerNews: 16 points</li>
+            </ul>
+            <p class="font-bold mt-4">Launch Date</p>
             <p>March 9th, 2024</p>
-            <p class="font-bold mt-2">Record Date</p>
+            <p class="font-bold mt-4">Record Date</p>
             <p>March 12th, 2024</p>
         </div>
-        
-
-        <!-- Data -->
-        <div class="grid md:grid-cols-2">
-            <div class="rounded-lg shadow-md p-6 m-6">
-                <img 
-                    src="GoogleAnalytics.png" 
-                    alt="Print My Drone Google Analytics" 
-                    class="mx-auto w-auto h-96 object-scale-down rounded"
-                >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-lg shadow-md p-4">
+                <img src="GoogleAnalytics.png" alt="Google Analytics" class="mx-auto w-full max-h-96 rounded">
             </div>
-
-            <div class="rounded-lg shadow-md p-6 m-6">
-                <img 
-                    src="HackerNews.png" 
-                    alt="Hacker News Post Print My Drone" 
-                    class="mx-auto w-auto h-96 object-scale-down rounded"
-                >
+            <div class="rounded-lg shadow-md p-4">
+                <img src="HackerNews.png" alt="Hacker News Post" class="mx-auto w-full max-h-96 rounded">
             </div>
-
-            <div class="rounded-lg shadow-md p-6 m-6">
-                <img 
-                    src="ShowHackerNews.png" 
-                    alt="Show Hacker News Post Print My Drone spot #4" 
-                    class="mx-auto w-auto h-96 object-scale-down rounded"
-                >
+            <div class="rounded-lg shadow-md p-4">
+                <img src="ShowHackerNews.png" alt="Show Hacker News Post" class="mx-auto w-full max-h-96 rounded">
             </div>
-
         </div>
-
-        <!-- Contact  -->
-        <div class="text-center my-10 text-2xl">
-            <a href="https://github.com/Tyler-Hilbert/launch-report" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-flex items-center justify-center">
+        <div class="text-center mt-10">
+            <a href="https://github.com/Tyler-Hilbert/launch-report" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-flex items-center justify-center transition-colors duration-150 ease-in-out">
                 Contact TYHSoftware@gmail.com for your own launch report
             </a>
         </div>
-
     </div>
 </body>
 </html>
